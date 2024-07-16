@@ -1,4 +1,4 @@
-function printNum(num) {
+function generateOutput(num) {
     let output = "";
 
     if (num % 2 === 0) {
@@ -13,10 +13,10 @@ function printNum(num) {
         output = num;
     }
 
-    console.log(output);
+    return output;
 }
 
 
 for (let i = 1; i < 100; i++) {
-    printNum(i);
+    console.log(generateOutput(i));
 }
